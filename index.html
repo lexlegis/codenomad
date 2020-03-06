@@ -4,7 +4,7 @@ title: Urban
 
 <section class="hero diagonal">
 	<div class="container">
-		<h2 class="editable">We build websites</h2>
+		<h2 class="editable">Learn to code</h2>
 		<p class="subtext editable">Code Nomad invites you to join an innovative program for learning skill necessary in a career of a successful software engineer. 
 			Attendants will be encouraged to work independently , but also to collaborate with the team to acheive a joint goal. 
 			The program is prepared for beginner level, and previous programing experience is required.</p>
@@ -15,14 +15,64 @@ title: Urban
 <section class="diagonal patterned">
 	<div class="container halves">
 		<div>
-			<h3 class="editable">Some of our work</h3>
-			<p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
+			<h3 class="editable">Who is it for?</h3>
+			<ul>
+				<li>Beginners</li>
+				<li>Beginners Beginners Beginners</li>
+				<li>Beginners Beginners Beginners Beginnersvv v= Beginners Beginners</li>
+				<li>Beginners Beginners Beginners1</li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="editable">Requirements</h3>
+			<ul>
+				<li>
+					Understanding and speaking English on a basic level. Serbian is an option when necessary to clarify a particular point, but English will be prefered cause it is an essencial skill for this profession.
+				</li>
+				<li>Stable internet connection</li>
+				<li>Availability three times a week - twice in the evening on work days and once on Saturday morning.</li>
+				<li>Being ready to do homework (up to 4h per week)</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="hero diagonal">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Benefits</h3>
+			<p class="editable">We take our pride in providing encouraging learning experience with a strong knowledge base and relevant skills in the most comfortable atmosphere.</p>
 			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
 		</div>
 		<div>
 			<ul class="image-grid">
 				{% for client in site.clients limit: 4 %}
-					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+					<li>
+						<a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a>
+						<p>Test text</p>
+					
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Benefits</h3>
+			<p class="editable">We take our pride in providing encouraging learning experience with a strong knowledge base and relevant skills in the most comfortable atmosphere.</p>
+			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for client in site.clients limit: 4 %}
+					<li>
+						<a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a>
+						<p>Test text</p>
+					
+					</li>
 				{% endfor %}
 			</ul>
 		</div>
@@ -38,7 +88,7 @@ title: Urban
 			</ul>
 		</div>
 		<div>
-			<h3 class="editable">Latest software, greatest perfomance</h3>
+			<h3 class="editable">More details about the program</h3>
 			<p class="editable">As a new agency we get reap the benefits of the latest and greatest. We build our websites with the most up to date technology. This ensures your website is fast, efficient and reliable for many years.</p>
 		</div>
 	</div>
