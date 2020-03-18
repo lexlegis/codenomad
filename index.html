@@ -1,5 +1,5 @@
 ---
-title: Urban
+title: Codenomad
 ---
 
 <section class="hero diagonal">
@@ -46,31 +46,10 @@ title: Urban
 		</div>
 		<div>
 			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
+				{% for benefit in site.benefits %}
 					<li>
-						<a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a>
-						<p>Test text</p>
-					
-					</li>
-				{% endfor %}
-			</ul>
-		</div>
-	</div>
-</section>
-
-<section class="diagonal patterned">
-	<div class="container halves">
-		<div>
-			<h3 class="editable">Benefits</h3>
-			<p class="editable">We take our pride in providing encouraging learning experience with a strong knowledge base and relevant skills in the most comfortable atmosphere.</p>
-			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
-		</div>
-		<div>
-			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
-					<li>
-						<a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a>
-						<p>Test text</p>
+						<img src="{% include relative-src.html src=benefit.image_path %}">
+						<p>{{ benefit.title }}</p>
 					
 					</li>
 				{% endfor %}

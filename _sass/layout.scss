@@ -170,7 +170,7 @@ section {
 		overflow: hidden;
 		margin: 20px;
 		border-radius: 5px;
-		text-align: left;
+		text-align: center;
 		border: 1px solid $brand-color;
 		line-height: 0;
 
@@ -183,7 +183,13 @@ section {
 		}
 
 		img {
-			min-width: 100%;
+			max-width: 50%;
+		}
+
+		p {
+			font-size: 1.5rem;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		> a:hover {
