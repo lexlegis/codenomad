@@ -1,5 +1,5 @@
-title: Urban Template
-url: "https://teal-worm.cloudvent.net"
+title: Codenomad
+url: "http://codenomad.io"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -16,16 +16,16 @@ author:
 
 # Social details for the jekyll-seo-tag gem
 social:
-  name: Urban Template
+  name: Codenomad
   links:
-    - https://github.com/CloudCannon/urban-jekyll-template
+    - http://codenomad.io
 
 timezone: Etc/UTC
 
 collections:
   staff_members:
     output: false
-  clients:
+  benefits:
     output: true
 
 paginate: 10
@@ -60,13 +60,13 @@ defaults:
           height: 2000
   - scope:
       path: ""
-      type: "clients"
+      type: "benefits"
     values:
-      layout: "client"
+      layout: "benefit"
       _options:
         image_path:
-          width: 2000
-          height: 2000
+          width: 200
+          height: 200
   - scope:
       path: ""
       type: "staff_members"
