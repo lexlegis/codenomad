@@ -1,3 +1,7 @@
+body {
+	height: 100vh;
+}
+
 .container,
 .text-container {
 	margin: 0 auto;
@@ -291,6 +295,7 @@ div.code-title {
 	transform: translateX(-50%);
 	top: 20px;
 	z-index: 100;
+	width: 330px;
 
 	color: #000;
 	font-size: 50px;
@@ -300,5 +305,77 @@ div.code-title {
 	.title-letter {
 		width: 40px;
 		height: 40px;
+	}
+}
+
+div.code-title.code-title-left {
+	left: 20px;
+	transform: unset;
+	width: auto;
+}
+
+.coming-soon-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	.code-title-left {
+		flex-grow: 0;
+	}
+
+	.diagonal.hero.fixed {
+		padding-top: 50px !important;
+		flex-grow: 0;
+	}
+	.diagonal.patterned.fixed {
+		flex-grow: 1;
+
+		p.coming-soon-motto {
+			color: $brand-color;
+			font-size: 2rem !important;
+			text-align: center;
+		}
+
+		p.coming-soon-title {
+			text-align: center;
+		}
+
+		p.coming-soon-message {
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 3rem;
+			text-align: center;
+		}
+	}
+
+	.coming-soon-hr {
+		width: 200px;
+		border-color: $brand-color;
+	}
+
+	.email-input-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-left: 50px;
+
+		#email-input {
+			width: 20%;
+			margin-left: 2rem;
+			margin-right: 1rem;
+			padding: 1px;
+		}
+	}
+}
+
+@media screen and (min-width: 601px) {
+	.coming-soon-container .diagonal.patterned.fixed p.coming-soon-title {
+		font-size: 7rem !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.coming-soon-container .diagonal.patterned.fixed p.coming-soon-title {
+		font-size: 4rem !important;
 	}
 }
