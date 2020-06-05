@@ -354,16 +354,31 @@ div.code-title.code-title-left {
 	}
 
 	.email-input-container {
-		display: flex;
-		flex-direction: row;
 		align-items: center;
-		padding-left: 50px;
+		margin-left: auto;
+		margin-right: auto;
 
-		#email-input {
-			width: 20%;
-			margin-left: 2rem;
-			margin-right: 1rem;
-			padding: 1px;
+		.email-input-message {
+			text-align: center;
+		}
+
+		.inputs {
+			display: flex;
+			flex-direction: row;
+
+			#email-input {
+				width: 40%;
+				margin-right: 0;
+				padding: 10px;
+				border-radius: 0;
+				margin-left: auto;
+			}
+
+			#submit-email {
+				background: $brand-color;
+				border: 0;
+				margin-right: auto;
+			}
 		}
 	}
 }
