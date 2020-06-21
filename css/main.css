@@ -1,0 +1,366 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100vh;
+}
+
+.section {
+  padding: 0 8rem;
+}
+.section.header, .section.first {
+  background: #222 url("/images/pattern.png");
+}
+
+
+.section.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  color: #FFA715;
+}
+.section.header img {
+  width: 1em;
+  height: 1em;
+}
+
+
+.section.first {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  color: #FFF;
+}
+
+.section.first .left, .section.first .right {
+  flex: 1 0 47.5%;
+}
+
+.section.first .left .header {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.section.first .left .body {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+.section.first .left .buttons {
+  display: flex;
+  flex-flow: wrap;
+}
+.section.first .left .buttons a {
+  background: #FFA715;
+  min-width: 6rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #FFF;
+}
+.section.first .left .buttons a:hover {
+  background-color: #FFA715E3;
+}
+.section.first .left .buttons .apply {
+  margin-right: 10px;
+}
+
+.section.first .right {
+  margin-left: 5%;
+}
+.section.first .right img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.section.second {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.section.second hr {
+  width: 8rem;
+  border: 2px solid #FFA715;
+}
+
+
+.section.third {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.section.third > * {
+  flex: 1 1 33%;
+}
+
+.section.third .target {
+  margin-bottom: 5rem;
+}
+.section.third .target .header {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.section.third .center {
+  position: relative
+}
+.section.third .center img {
+  max-width: 15rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.section.third .right {
+  text-align: right;
+}
+
+.section.third .mobile-only {
+  display: none;
+}
+.section.third .mobile-only img {
+  width: 100%;
+}
+
+
+.section.fourth {
+  margin-bottom: 3rem;
+}
+.section.fourth .header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.section.fourth .header hr {
+  width: 8rem;
+  border: 2px solid #FFA715;
+}
+.section.fourth .first, .section.fourth .second {
+  display: flex;
+  flex-direction: row;
+}
+.section.fourth .benefit {
+  flex: 1 0 30%;
+  text-align: center;
+  margin: 0 1.5%;
+}
+
+.section.fourth .benefit .icon {
+  margin-bottom: 0.5rem;
+}
+.section.fourth .benefit.bigger-icon .icon {
+  margin-top: -0.5rem;
+}
+.section.fourth .benefit .icon img {
+  width: 3rem;
+  height: 3rem;
+}
+.section.fourth .benefit.bigger-icon .icon img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.section.fourth .benefit .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.section.fourth .benefit .body {
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+
+.section.fifth {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.section.fifth .header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.section.fifth .header hr {
+  width: 8rem;
+  border: 2px solid #FFA715;
+}
+
+.section.fifth .body .requirement {
+  margin-bottom: 1rem;
+}
+.section.fifth .body .requirement img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+}
+
+
+.section.sixth {
+  margin-bottom: 5rem;
+}
+.section.sixth .header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.section.sixth .header hr {
+  width: 8rem;
+  border: 2px solid #FFA715;
+}
+
+.section.sixth .body > * {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.section.sixth .ending {
+  text-align: center;
+}
+.section.sixth .ending > * {
+  margin-bottom: 0.5rem;
+}
+
+.section.sixth .ending .price {
+  font-size: 1.5rem;
+}
+.section.sixth .ending .price s {
+  color: #FFA715;
+}
+.section.sixth .ending .price s span {
+  color: #000;
+}
+.section.sixth .ending .fine-print {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.section.sixth .ending .apply {
+  display: flex;
+  justify-content: center;
+}
+.section.sixth .ending .apply a {
+  background: #FFA715;
+  min-width: 6rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #FFF;
+}
+.section.sixth .ending .apply a:hover {
+  background-color: #FFA715E3;
+}
+
+
+.section.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #222 url("/images/pattern.png");
+  color: #999;
+}
+
+.section.footer .contacts {
+  display: flex;
+  flex-flow: wrap;
+}
+.section.footer .contacts .get-in-touch, .section.footer .contacts .company-info {
+  flex: 1 0 50%;
+}
+
+.section.footer .contacts .get-in-touch .header {
+  font-size: 1.5rem;
+  color: #CCC;
+}
+.section.footer .contacts .get-in-touch > * {
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: #999;
+}
+.section.footer .contacts .get-in-touch svg {
+  fill: #999;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-right: 10px;
+}
+
+.section.footer .contacts .company-info .header {
+  font-size: 1.5rem;
+  color: #CCC;
+}
+.section.footer .contacts .company-info > * {
+  margin-bottom: 1.5rem;
+}
+.section.footer .contacts .company-info .body {
+  color: #666;
+}
+.section.footer .contacts .company-info .email a {
+  text-decoration: none;
+  color: #999;
+}
+
+.section.footer .legal-line {
+  color: #666;
+  font-weight: 300;
+}
+
+
+
+@media (max-width: 640px) {
+  .section {
+    padding: 0 10%;
+  }
+  .section.first .right {
+    margin-top: 2rem;
+  }
+  .section.third {
+    flex-direction: column;
+  }
+  .section.third .body {
+    text-align: justify;
+  }
+  .section.third .header {
+    text-align: initial;
+  }
+  .section.third .center {
+    display: none;
+  }
+  .section.third .mobile-only {
+    display: block;
+  }
+  .section.fourth .first, .section.fourth .second {
+    flex-direction: column;
+  }
+  .section.fourth .benefit {
+    margin: 0;
+  }
+  .section.footer .contacts .get-in-touch {
+    margin-bottom: 2rem;
+  }
+}
