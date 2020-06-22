@@ -7,11 +7,24 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100vh;
 }
+hr {
+  width: 8rem;
+  border: 2px solid #FFA715;
+}
+.brand-color-text {
+  color: #FFA715;
+}
+.brand-color-background {
+  background-color: #FFA715;
+}
+a.brand-color-background:hover {
+  background-color: #FFA715E3;
+}
 
 .section {
   padding: 0 8rem;
 }
-.section.header, .section.first {
+.top-background-wrapper {
   background: #222 url("/images/pattern.png");
 }
 
@@ -23,7 +36,6 @@ body {
   font-weight: bold;
   display: flex;
   flex-direction: row;
-  color: #FFA715;
 }
 .section.header img {
   width: 1em;
@@ -59,7 +71,6 @@ body {
   flex-flow: wrap;
 }
 .section.first .left .buttons a {
-  background: #FFA715;
   min-width: 6rem;
   padding: 1rem;
   border-radius: 2rem;
@@ -68,9 +79,6 @@ body {
   text-decoration: none;
   text-align: center;
   color: #FFF;
-}
-.section.first .left .buttons a:hover {
-  background-color: #FFA715E3;
 }
 .section.first .left .buttons .apply {
   margin-right: 10px;
@@ -91,10 +99,6 @@ body {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-}
-.section.second hr {
-  width: 8rem;
-  border: 2px solid #FFA715;
 }
 
 
@@ -151,10 +155,6 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
 }
-.section.fourth .header hr {
-  width: 8rem;
-  border: 2px solid #FFA715;
-}
 .section.fourth .first, .section.fourth .second {
   display: flex;
   flex-direction: row;
@@ -201,10 +201,6 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
 }
-.section.fifth .header hr {
-  width: 8rem;
-  border: 2px solid #FFA715;
-}
 
 .section.fifth .body .requirement {
   margin-bottom: 1rem;
@@ -228,10 +224,6 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
 }
-.section.sixth .header hr {
-  width: 8rem;
-  border: 2px solid #FFA715;
-}
 
 .section.sixth .body > * {
   margin-bottom: 1rem;
@@ -248,9 +240,6 @@ body {
 .section.sixth .ending .price {
   font-size: 1.5rem;
 }
-.section.sixth .ending .price s {
-  color: #FFA715;
-}
 .section.sixth .ending .price s span {
   color: #000;
 }
@@ -264,7 +253,6 @@ body {
   justify-content: center;
 }
 .section.sixth .ending .apply a {
-  background: #FFA715;
   min-width: 6rem;
   padding: 1rem;
   border-radius: 2rem;
@@ -272,9 +260,6 @@ body {
   text-decoration: none;
   text-align: center;
   color: #FFF;
-}
-.section.sixth .ending .apply a:hover {
-  background-color: #FFA715E3;
 }
 
 
